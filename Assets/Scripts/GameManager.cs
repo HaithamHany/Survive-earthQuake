@@ -12,13 +12,13 @@ public class GameManager : MonoBehaviour {
 
     // Update is called once per frame
    
-    void Start()
+   private void Start()
     {
 
         SetMenu = FindObjectOfType<Settings>();
 
     }
-	void Update () {
+	private void Update () {
        
       if (SetMenu.musicIsOff)
         {
@@ -41,10 +41,8 @@ public class GameManager : MonoBehaviour {
         }
         else
         {
-
             SFXMusic.SetActive(true);
-            CarSound.mute= false;
-           
+            CarSound.mute= false;     
         }
 
 	}
