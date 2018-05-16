@@ -8,7 +8,7 @@ public class ShakeCamera : MonoBehaviour {
     public float shakeIntenisity = 0.1f;
     public bool shakeCamera;
     private float resetTime;
-    void Start () {
+    private void Start () {
         resetTime = shakeTimer;
     }
 	
