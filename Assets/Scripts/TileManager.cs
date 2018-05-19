@@ -15,7 +15,7 @@ public class TileManager : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
+    private void Start () {
         
         
         for (int i = 0; i < numberOfStartingTiles; i++)
@@ -26,10 +26,7 @@ public class TileManager : MonoBehaviour {
 
     }
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
     public void SpawnTile()
     {
         int tileNumber = Random.Range(0, 2);
